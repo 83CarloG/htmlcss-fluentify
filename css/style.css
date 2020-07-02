@@ -6,9 +6,16 @@
 }
 
 header{
-  height: 400px;
-  background-color: #0C325A;
 
+  background-color: #0C325A;
+}
+
+.button  {
+  border-radius: 5px;
+  padding: 10px 32px;
+  margin: 4px 2px;
+  color: white;
+  font-size: 14px;
 }
 
 .container {
@@ -61,15 +68,7 @@ header{
   font-size: 14px;
   text-align: center;
 }
-
-button  {
-  border-radius: 5px;
-  padding: 10px 32px;
-  margin: 4px 2px;
-  color: white;
-}
-
-#login {
+.login {
   border: 2px solid #fff;
   background-color: #0C325A;
 }
@@ -84,3 +83,49 @@ button  {
   font-size: 14px;
   text-align: right;
 }
+
+/* Banner */
+.banner {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+.banner-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Banner left */
+.banner-left {
+  width: 50%;
+  height: 100%;
+}
+.slogan {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+  width: 35%;
+  padding-right: 20px;
+}
+.slogan h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+.big {
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 22px;
+}
+/* /Banner left */
+.banner-right{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 500px;
+  width: 60%;
+  background-image: url(../img/background-header.png);
+  background-size: cover;
+}
+/* /Banner */
